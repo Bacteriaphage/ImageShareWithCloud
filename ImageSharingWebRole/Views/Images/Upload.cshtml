@@ -1,0 +1,42 @@
+﻿@model SelectList
+@{
+    ViewBag.Title = "Upload an Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("Upload", "Images", FormMethod.Post, new { enctype = "multipart/form-data" }); }
+@Html.AntiForgeryToken()
+<fieldset>
+    <legend>Enter Image Information</legend>
+
+    <p>
+        Caption: @Html.TextBox("Caption")
+                 @Html.ValidationMessage("Caption")
+    </p>
+    <p>
+        Select a Tag: @Html.DropDownList("TagId", ViewBag.Tags as SelectList)
+        @Html.ValidationMessage("TagId")
+    </p>
+    <p>
+        Description:<br />
+        @Html.TextArea("Description", "Enter description here." , 5 , 40, null)
+        @Html.ValidationMessage("Description")
+    </p>
+    <p>
+        Date taken: @Html.TextBox("DateTaken")
+                    @Html.ValidationMessage("DateTaken")
+    </p>
+    <p>
+        <input type="file" name="ImageFile" />
+    </p>
+    <p>
+        <input type="submit" value="Upload" />
+    </p>
+</fieldset>
+
+<p>@ViewBag.Message</p>
+<p>@Html.ValidationSummary()</p>
+
+@{Html.EndForm();}
+

@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ImageSharingWebRole.Models.LogEntry>
+
+@{
+    ViewBag.Title = "Image Viewing Activity";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<table class="gridTable">
+    <tr>
+        <th>
+            Caption
+        </th>
+        <th>
+            User
+        </th>
+        <th>
+            Time
+        </th>
+    </tr>
+    @foreach (var entry in Model)
+    {
+        <tr>
+            <td>
+                @Html.ActionLink(entry.Caption, "Details", "Images", new { Id = entry.ImageId })
+            </td>
+            <td>
+                @entry.UserId
+            </td>
+            <td>
+                @string.Format("{0:t}", entry.EntryDate)
+            </td>
+
+
+        </tr>
+    }
+</table>
+@ViewBag.Message
+

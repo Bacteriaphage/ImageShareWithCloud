@@ -1,0 +1,17 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:10 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWebRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:10 AM] DiagnosticsStoreRootPath set to: C:\Users\hy\AppData\Local\dftmp\Resources\a66b75fd-3a9e-4bfc-bfcf-0e769ca4183d
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:10 AM] Loading config file: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWebRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:10 AM] Config file to read: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWebRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWebRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:06:21 AM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:06:21 AM] DiagnosticPlugin exited with code 0

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageSharingWorkerRole" version="2.9.8499.13" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="ImageSharingWorkerRole.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.5.2" />
+    <Property name="RoleType" value="Worker" />
+    <Property name="RoleName" value="ImageSharingWorkerRole" />
+    <Property name="ProjectName" value="ImageSharingWorkerRole" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.5.2" />
+    <Property name="OutputDir" value="D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\obj\Release\ImageSharingWorkerRole\" />
+    <Property name="EntryPoint" value="ImageSharingWorkerRole.dll" />
+    <Property name="SourceDir" value="" />
+    <Property name="SitePhysicalPath" value="" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+</RoleModel>

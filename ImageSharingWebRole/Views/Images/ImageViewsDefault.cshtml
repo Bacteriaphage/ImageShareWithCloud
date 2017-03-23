@@ -1,0 +1,23 @@
+﻿
+@model SelectList
+@{
+    ViewBag.Title = "Check log in weeks";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("ImageViews", "Images", FormMethod.Get); }
+
+<fieldset>
+    <legend>Choose a week</legend>
+    <p>
+        Week: @Html.DropDownList("Id", Model)
+    </p>
+    <p>
+        <input type="submit" value="Check" />
+    </p>
+</fieldset>
+
+@ViewBag.Message
+
+@{ Html.EndForm(); }

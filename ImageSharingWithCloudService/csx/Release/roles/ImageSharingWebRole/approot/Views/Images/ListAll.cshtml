@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ImageSharingWebRole.Models.Image>
+
+@{
+    ViewBag.Title = "All Images";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@Html.AntiForgeryToken()
+
+<table>
+    <tr>
+        <th>Caption</th>
+        <th>Uploader</th>
+        <th>Tag</th>
+        <th>Actions</th>
+    </tr>
+
+    @foreach (var image in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(m => image.Caption)
+            </td>
+            <td>
+                @Html.DisplayFor(m => image.User.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(m => image.Tag.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { Id = image.Id })
+                @if (ViewBag.Userid.Equals(image.User.Id))
+                {
+                    <text>
+                        @Html.ActionLink("Edit", "Edit", new { Id = image.Id })
+                        @Html.ActionLink("Delete", "Delete", new { Id = image.Id })
+                    </text>
+                }
+            </td>
+        </tr>
+    }
+</table>

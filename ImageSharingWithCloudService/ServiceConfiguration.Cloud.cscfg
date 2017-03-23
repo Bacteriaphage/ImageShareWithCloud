@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="ImageSharingWithCloudService" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="4" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="ImageSharingWebRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=hycloudsd;AccountKey=dMETaSwiQVRBePU7t4QHeNTFd8X1EObPVo+l/PH5689cacmoNAyowkwsPh882tAI1dM2nLJbHLof18RcF8sgDg==" />
+      <Setting name="AzureStorageString" value="DefaultEndpointsProtocol=https;AccountName=hycloudsd;AccountKey=dMETaSwiQVRBePU7t4QHeNTFd8X1EObPVo+l/PH5689cacmoNAyowkwsPh882tAI1dM2nLJbHLof18RcF8sgDg==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="72affae6-3676-443c-b9fd-6c5961cb2632" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="ImageSharingWorkerRole">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=hycloudsd;AccountKey=dMETaSwiQVRBePU7t4QHeNTFd8X1EObPVo+l/PH5689cacmoNAyowkwsPh882tAI1dM2nLJbHLof18RcF8sgDg==" />
+      <Setting name="Microsoft.ServiceBus.ConnectionString" value="Endpoint=sb://imagebus.servicebus.windows.net/;SharedAccessKeyName=RootManageSharedAccessKey;SharedAccessKey=ltHmOGyAp/0HNg3q2OSZokLaAlf9QgLFXnezcuul+CU=" />
+      <Setting name="AzureSQLDatabase" value="Server=tcp:eevtwpjs8d.database.windows.net,1433;Database=cloudDB;User ID=sqladmin@eevtwpjs8d;Password=Admin123;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" />
+      <Setting name="AzureStorageString" value="DefaultEndpointsProtocol=https;AccountName=hycloudsd;AccountKey=dMETaSwiQVRBePU7t4QHeNTFd8X1EObPVo+l/PH5689cacmoNAyowkwsPh882tAI1dM2nLJbHLof18RcF8sgDg==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="72affae6-3676-443c-b9fd-6c5961cb2632" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

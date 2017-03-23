@@ -1,0 +1,32 @@
+﻿@model IEnumerable<String> 
+@{
+    ViewBag.Title = "ValidationQueueMessage";
+}
+
+<h2>@ViewBag.Title</h2>
+@{ Html.BeginForm("ValidationMessage", "Images", FormMethod.Post); }
+<fieldset>
+    @Html.AntiForgeryToken()
+    <table class="gridTable">
+        <tr>
+            <th>
+                ValidationMessage
+            </th>
+        </tr>
+        @foreach (var entry in Model)
+        {
+            <tr>
+                <td>
+                    @entry
+                </td>
+            </tr>
+        }
+    </table>
+    <p>@ViewBag.size</p>
+    <p>
+        <input type="submit" value="clear" />
+    </p>
+</fieldset>
+@ViewBag.Message
+
+@{ Html.EndForm(); }

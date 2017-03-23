@@ -1,0 +1,50 @@
+﻿@model ImageSharingWebRole.Models.ImageView
+
+@{
+    ViewBag.Title = "Edit Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("Edit", "Images", FormMethod.Post); }
+
+<fieldset>
+    <legend>Edit Image Information</legend>
+
+    @Html.HiddenFor(m => m.Id)
+    <p>
+        <img src="@Model.Uri" onload='if (this.width>140 || this.height>226) if (this.width/this.height>140/226) this.width=140; else this.height=226;' />
+    </p>
+
+    <p>Image id: @Model.Id </p>
+
+    <p>
+        Caption: @Html.TextBoxFor(m => m.Caption)
+        @Html.ValidationMessageFor(m => m.Caption)
+    </p>
+    <p>
+        Select a tag: @Html.DropDownListFor(m => m.TagId, ViewBag.Tags as SelectList)
+    </p>
+    <p>
+        Description:
+        <br />
+        @Html.TextAreaFor(m => m.Description, 5, 40, null)
+        @Html.ValidationMessageFor(m => m.Description)
+    </p>
+    <p>
+        Date taken: @Html.TextBoxFor(m => m.DateTaken)
+        @Html.ValidationMessageFor(m => m.DateTaken)
+    </p>
+    <p>
+        <input type="submit" value="Submit Changes" />
+    </p>
+</fieldset>
+
+<p>
+    @ViewBag.Message
+</p>
+<p>
+    @Html.ValidationSummary()
+</p>
+
+@{ Html.EndForm(); }

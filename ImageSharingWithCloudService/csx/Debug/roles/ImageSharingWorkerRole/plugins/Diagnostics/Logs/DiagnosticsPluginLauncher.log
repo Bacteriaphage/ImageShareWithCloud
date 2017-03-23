@@ -1,0 +1,19 @@
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] At least one other instance of the launcher is running. Will wait until they all finish
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Service running in Emulator Mode, will not wait/kill other instances of the launcher
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] DiagnosticsStoreRootPath set to: C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Loading config file: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Config file to read: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Checking VM Type
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Extension set to Emulator Mode
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Reading XML configuration file
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Bypassing private config decryption
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Stopping the running plugin, if any
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] No DiagnosticsPlugin is running.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Killing any DiagnosticsPlugin that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Killing any MonAgentHost that might remain.
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Diagnostics plugin stopped successfully
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:05:11 AM] Resetting DiagnosticPlugin
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:06:21 AM] DiagnosticsPlugin launched successfully with new configuration
+DiagnosticsPluginLauncher.exe Information: 0 : [12/7/2016 3:06:21 AM] DiagnosticPlugin exited with code 0

@@ -1,0 +1,22 @@
+﻿@model SelectList
+@{
+    ViewBag.Title = "List Images By Tag";
+}
+
+<h2>@ViewBag.Title</h2>
+
+@{ Html.BeginForm("DoListByTag", "Images", FormMethod.Get); }
+
+<fieldset>
+    <legend>Choose a tag</legend>
+    <p>
+        Tag: @Html.DropDownList("Id", Model)
+    </p>
+    <p>
+        <input type="submit" value="List" />
+    </p>
+</fieldset>
+
+@ViewBag.Message
+
+@{ Html.EndForm(); }

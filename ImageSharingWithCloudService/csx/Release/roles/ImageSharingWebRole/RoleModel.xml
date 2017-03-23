@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RoleModel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ImageSharingWebRole" version="2.9.8499.13" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceDefinition">
+  <Runtime>
+    <EntryPoint>
+      <NetFxEntryPoint assemblyName="ImageSharingWebRole.dll" targetFrameworkVersion="v4.0" />
+    </EntryPoint>
+  </Runtime>
+  <Properties>
+    <Property name="TargetFrameworkVersion" value="v4.5.2" />
+    <Property name="RoleType" value="Web" />
+    <Property name="RoleName" value="ImageSharingWebRole" />
+    <Property name="ProjectName" value="ImageSharingWebRole" />
+    <Property name="Configuration" value="Release" />
+    <Property name="Platform" value="AnyCPU" />
+    <Property name="SetConfiguration" value="Configuration=Release" />
+    <Property name="SetPlatform" value="Platform=AnyCPU" />
+    <Property name="RoleTargetFramework" value="v4.5.2" />
+    <Property name="OutputDir" value="D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\obj\Release\ImageSharingWebRole\" />
+    <Property name="EntryPoint" value="ImageSharingWebRole.dll" />
+    <Property name="SourceDir" value="D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWebRole\" />
+    <Property name="SitePhysicalPath" value="D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\obj\Release\ImageSharingWebRole\" />
+    <Property name="TargetRuntimeVersion" value="v4.0" />
+  </Properties>
+  <Sites>
+    <Site name="Web" physicalDirectory="D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\obj\Release\ImageSharingWebRole\">
+      <Bindings>
+        <Binding name="Endpoint1" endpointName="Endpoint1" />
+      </Bindings>
+    </Site>
+  </Sites>
+</RoleModel>

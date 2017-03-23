@@ -1,0 +1,90 @@
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:11 AM] Starting DiagnosticPlugin.exe DiagnosticPlugin-ShutdownEvent DiagnosticPlugin-TotalShutdownEvent -wadVer1v5
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Successfully saved IIS Directory state
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Starting DiagnosticsPlugin
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] DiagnosticsStoreRootPath set to: C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Loading config file: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Config file to read: D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Checking VM Type
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Emulator config file set to D:\Course\CS526\ImageSharingWithCloudService\ImageSharingWithCloudService\csx\Debug\roles\ImageSharingWorkerRole\approot\diagnostics.wadcfgx
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Extension set to Emulator Mode
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Reading XML configuration file
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Bypassing private config decryption
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] WadCfg is provided in initial configuration. Using that to initialize Diagnostics.
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] <PublicConfig xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration">
+  <WadCfg>
+    <DiagnosticMonitorConfiguration overallQuotaInMB="4096" sinks="applicationInsights.errors">
+      <DiagnosticInfrastructureLogs scheduledTransferLogLevelFilter="Error" />
+      <Directories scheduledTransferPeriod="PT1M">
+        <IISLogs containerName="wad-iis-logfiles" />
+        <FailedRequestLogs containerName="wad-failedrequestlogs" />
+      </Directories>
+      <PerformanceCounters scheduledTransferPeriod="PT1M">
+        <PerformanceCounterConfiguration counterSpecifier="\Memory\Available MBytes" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\ISAPI Extension Requests/sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Web Service(_Total)\Bytes Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Requests/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET Applications(__Total__)\Errors Total/Sec" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Queued" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\ASP.NET\Requests Rejected" sampleRate="PT3M" />
+        <PerformanceCounterConfiguration counterSpecifier="\Processor(_Total)\% Processor Time" sampleRate="PT3M" />
+      </PerformanceCounters>
+      <WindowsEventLog scheduledTransferPeriod="PT1M">
+        <DataSource name="Application!*[System[(Level=1 or Level=2 or Level=3)]]" />
+        <DataSource name="Windows Azure!*[System[(Level=1 or Level=2 or Level=3 or Level=4)]]" />
+      </WindowsEventLog>
+      <CrashDumps>
+        <CrashDumpConfiguration processName="WaIISHost.exe" />
+        <CrashDumpConfiguration processName="WaWorkerHost.exe" />
+        <CrashDumpConfiguration processName="w3wp.exe" />
+      </CrashDumps>
+      <Logs scheduledTransferPeriod="PT1M" scheduledTransferLogLevelFilter="Error" />
+    </DiagnosticMonitorConfiguration>
+    <SinksConfig>
+      <Sink name="applicationInsights">
+        <ApplicationInsights>72affae6-3676-443c-b9fd-6c5961cb2632</ApplicationInsights>
+        <Channels>
+          <Channel logLevel="Error" name="errors" />
+        </Channels>
+      </Sink>
+    </SinksConfig>
+  </WadCfg>
+  <StorageAccount>devstoreaccount1</StorageAccount>
+</PublicConfig>
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Private setting is loaded
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Is config json/xml loaded
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Checking if configuration needs to be fetched from the storage account and doing so if needed.
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Successfully created checkpoint file C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b\WAD0105\Configuration\Checkpoint.txt
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Will use local resource directory C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b\WAD0105
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:12 AM] Will use endpoint https://core.windows.net for storage.
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Expanding path %SystemDrive%\inetpub\logs\LogFiles to C:\inetpub\logs\LogFiles
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Expanding path %SystemDrive%\inetpub\logs\FailedReqLogFiles to C:\inetpub\logs\FailedReqLogFiles
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Created IIS log watch item: "C:\inetpub\logs\LogFiles"
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Created IIS failed requests watch item: "C:\inetpub\logs\FailedReqLogFiles"
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Running in emulator mode, crash dumps not enabled
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Checking to see if Application Insights extension needs to be configured.
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] Adding Application Insights extension to MA config
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:05:13 AM] In emulator mode and using devstore updating XStoreAccount info, command line args: -LocalPath "C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b\WAD0105"  -ConfigFile "C:\Users\hy\AppData\Local\dftmp\Resources\28d4b137-81be-4f80-bd17-17e29c49ff9b\WAD0105\Configuration\MaConfig.xml" -ShutDownEvent WADDM-ShutDown-95776f9427c84c598073a4c4df860eb0  -TotalShutDownEvent WADDM-TotalShutDown-95776f9427c84c598073a4c4df860eb0 -InitializedEvent WADM-StartUp-95776f9427c84c598073a4c4df860eb0 -parent 14948 -events -wadVer1v5 -UseProxyServer -XStoreAccounts WadAccount#true#devstoreaccount1#Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==#http://127.0.0.1:10002#http://127.0.0.1:10001#http://127.0.0.1:10000
+DiagnosticsPlugin.exe Error: 0 : [12/7/2016 3:05:44 AM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:06:14 AM] MonAgentHost.exe started
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:06:14 AM] DiagnoticsPlugin started.
+DiagnosticsPlugin.exe Information: 0 : [12/7/2016 3:06:14 AM] DiagnoticsPlugin now waiting on events "DiagnosticPlugin-ShutdownEvent", "DiagnosticPlugin-TotalShutdownEvent" or "DiagnosticPlugin-RestartEvent".
+DiagnosticsPlugin.exe Error: 0 : [12/7/2016 3:06:14 AM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [12/7/2016 3:06:44 AM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [12/7/2016 3:07:14 AM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)
+DiagnosticsPlugin.exe Error: 0 : [12/7/2016 3:07:44 AM] Microsoft.Cis.Monitoring.Query.QueryException: ErrorFail
+   at Microsoft.Cis.Monitoring.Query.QueryLocalTable..ctor(String TableName, String TablePath)
+   at ApplicationInsightsExtension.MATableReader.ReadTableRecords(String tableName, String tablePath, DateTime startTime, DateTime endTime)
+   at Microsoft.Azure.Plugins.Diagnostics.dll.MAStatusWriter.UpdateStatusReport(Object sender, ElapsedEventArgs e)

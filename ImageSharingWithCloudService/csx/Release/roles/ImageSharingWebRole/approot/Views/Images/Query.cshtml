@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Find an Image";
+}
+
+<h2>@ViewBag.Title</h2>
+
+
+@{ Html.BeginForm("Details", "Images", FormMethod.Get); }
+
+<fieldset>
+    <legend>Enter Image Information</legend>
+    <p>
+        Image id: @Html.TextBox("Id")
+    </p>
+   
+    <p>
+        <input type="submit" value="Query" />
+    </p>
+</fieldset>
+
+@ViewBag.Message
+@{Html.EndForm();}
+

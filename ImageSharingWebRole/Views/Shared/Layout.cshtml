@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head id="head">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <title> @ViewBag.Title </title>
+
+    @*
+        @Styles.Render("~/Content/css")
+    *@
+
+  
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+
+    @*
+        @Scripts.Render("~/bundles/modernizr")
+    *@
+    <script src="@Url.Content("~/Scripts/modernizr-2.6.2.js")"></script>
+
+</head>
+
+<body class="twoColumnHdrFtr">
+    <div id="container">
+        <header id="header">
+            <h1><img alt="[Jive Talkin' Choirboy]" src="@Url.Content("~/Images/jive-talkin-choirboy.png")" /></h1>
+        </header>
+
+        <nav id="nav">
+            <ul>
+                <li>@Html.ActionLink("Register", "Register", "Account")</li>
+                <li>@Html.ActionLink("Login", "Login", "Account")</li>
+                <li>@Html.ActionLink("Upload", "Upload", "Images")</li>
+                <li>@Html.ActionLink("List All", "ListAll", "Images")</li>
+                <li>@Html.ActionLink("List By User", "ListByUser", "Images")</li>
+                <li>@Html.ActionLink("List By Tag", "ListByTag", "Images")</li>
+                <li>@Html.ActionLink("Approve", "Approve", "Images")</li>
+                <li>@Html.ActionLink("Delete", "Delete", "Account")</li>
+                <li>@Html.ActionLink("Supervise","ImageViewsDefault","Images")</li>
+                <li>@Html.ActionLink("ValidationMessage","ValidationMessage","Images")</li>
+                <li>@Html.ActionLink("Log Off","Login","Account")</li>
+            </ul>
+        </nav>
+
+        <aside id="sidebar">
+            <h1>Links</h1>
+            <p>
+                <a rel="nofollow" href="@(String.Format("mailto:hzhang55@stevens.edu"))">
+                    Email Me!
+                </a>
+            </p>
+            <p><a href="http://www.stevens.edu">Stevens Home Page</a></p>
+        </aside>
+        <article id="content">
+            @RenderBody()
+        </article>
+        <footer id="footer">
+            <p>&copy; @DateTime.Now.Year Hanyu Zhang</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
