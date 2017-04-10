@@ -14,7 +14,7 @@ frontend: Razor
 #### User account
 Controller: AccountController
 
-Model: IntityModel
+Model: EntityModel
 
 View: Views/Account/
 
