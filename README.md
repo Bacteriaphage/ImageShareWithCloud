@@ -9,7 +9,7 @@ frontend: Razor
 
 ## FrameWork
 
-### Worker Role
+### Web Role
 
 #### User account
 Controller: AccountController
@@ -50,7 +50,7 @@ Edit and Delete can be only done by the uploader, checking the uploader and now 
 
 Check images log will get image log from the azure table storage.
 
-### WebRole
+### Worker Role
 
 WebRole will listen to the service bus and read the validationQueue. Each time it grabs a validate request, it call a function to judge whether the image in the blob storage is jpeg type. If not, it will delete the image and its information from the database.
 
